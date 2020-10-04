@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1 {
+    color: rgb(255, 140, 0);
+    font-size: 24px;
+    margin: 0;
+    padding: 16px 0 8px 0;
+    font-weight: 600;
+}
+
+h2 {
+    color: rgb(255, 140, 0);
+    font-size: 32px;
+    margin: 0;
+    padding: 16px 0 8px 0;
+    font-weight: 600;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  height: 280px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: rgb(74, 144, 226);
+  color: rgb(255, 255, 255);
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h2>Favourite Cartoons</h2>
+  <p>Some display of my interesting cartoons from Disney.</p>
+</div>
+
+<h3 style="text-align:center">My Showcase</h3>
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <div class="container">
+                <h1>Frozen</h1>
+                <p>
+                    Frozen is a 2013 American 3D computer-animated musical fantasy film produced by Walt Disney Animation Studios and released by Walt Disney Pictures. 
+                    The 53rd Disney animated feature film, it is inspired by Hans Christian Andersen's 1844 fairy tale "The Snow Queen".
+                </p>
+                <p><button class="button">Like</button></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <div class="container">
+                <h1>Moana</h1>
+                <p>
+                    Moana, daughter of chief Tui, embarks on a journey to return the heart of goddess Te Fitti from Maui, 
+                    a demigod, after the plants and the fish on her island start dying due to a blight.
+                </p>
+                <p><button class="button">Like</button></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="column">
+        <div class="card">
+            <div class="container">
+                <h1>Coco</h1>
+                <p>
+                    Despite his family's generations-old ban on music, young Miguel dreams of becoming an accomplished musician like his idol Ernesto de la Cruz. 
+                    Desperate to prove his talent, Miguel finds himself in the stunning and colorful Land of the Dead. 
+                    After meeting a charming trickster named Héctor, 
+                    the two new friends embark on an extraordinary journey to unlock the real story behind Miguel's family history.
+                </p>
+                <p><button class="button">Like</button></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <div class="container">
+                <h1>Pocahontas</h1>
+                <p>
+                    Pocahontas was a Native American woman notable for her association with the colonial settlement at Jamestown, Virginia. 
+                    She was the daughter of Powhatan, the paramount chief of a network of tributary tribes in the Tsenacommacah, 
+                    encompassing the Tidewater region of Virginia.
+                </p>
+                <p><button class="button">Like</button></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="column">
+        <div class="card"> 
+            <div class="container">
+                <h1>Mulan</h1>
+                    <p>
+                        To save her ailing father from serving in the Imperial Army, 
+                        a fearless young woman disguises herself as a man to battle northern invaders in China.
+                    </p>
+                <p><button class="button">Like</button></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
